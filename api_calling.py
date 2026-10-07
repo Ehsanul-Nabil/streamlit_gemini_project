@@ -75,7 +75,9 @@ def quiz_generator(images,difficulty):
                 contents=[*images, prompt]
             )
 
+            print(f"Successfull on {model}")
             return response.text
+
 
         except Exception as e:
             print(f"{model} failed: {e}")
